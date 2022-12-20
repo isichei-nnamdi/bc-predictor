@@ -20,12 +20,12 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report, confusion_matrix
 # from sklearn.model_selection import train_test_split, KFold, cross_val_score
 
-#Data importation streamlit_app/breast-cancer.csv | https://github.com/isichei-nnamdi/bc-predictor/blob/main/
+#Data importation streamlit_app/breast-cancer.csv | https://github.com/isichei-nnamdi/bc-predictor/blob/main/ | "📈"
 data = pd.read_csv("streamlit_app/breast-cancer.csv", on_bad_lines='skip')
-test_data = pd.read_csv('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/y_test.csv', on_bad_lines='skip')
+test_data = pd.read_csv('streamlit_app/y_test.csv', on_bad_lines='skip')
 
-#favicon = Image.open('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/bc_fav.png')
-st.set_page_config(page_title="BC-classifier", page_icon= "📈")
+favicon = Image.open('streamlit_app/bc_fav.png')
+st.set_page_config(page_title="BC-classifier", page_icon= favicon)
 
 
 def main():
@@ -115,11 +115,11 @@ def main():
             st.write(dataframe.head(5))
 
             # Loading model to compare the results
-            tree_model = pickle.load(open('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/DecisionTreeClassifier().pkl','rb'))
-            gauss_model = pickle.load(open('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/GaussianNB().pkl','rb'))
-            knn_model = pickle.load(open('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/KNeighborsClassifier(n_neighbors%3D3).pkl','rb'))
-            lr_model = pickle.load(open('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/lr_model.pkl','rb'))
-            svc_model = pickle.load(open('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/svc_fit.pkl','rb'))
+            tree_model = pickle.load(open('streamlit_app/DecisionTreeClassifier().pkl','rb'))
+            gauss_model = pickle.load(open('streamlit_app/GaussianNB().pkl','rb'))
+            knn_model = pickle.load(open('streamlit_app/KNeighborsClassifier(n_neighbors%3D3).pkl','rb'))
+            lr_model = pickle.load(open('streamlit_app/lr_model.pkl','rb'))
+            svc_model = pickle.load(open('streamlit_app/svc_fit.pkl','rb'))
             
             options = st.selectbox(
                     'Select a trained model from the list to classify the type of breast cancer.',
