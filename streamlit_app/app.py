@@ -8,17 +8,17 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
-from sklearn.svm import SVC
-from sklearn import decomposition
-from sklearn.naive_bayes import GaussianNB
+# from sklearn.svm import SVC
+# from sklearn import decomposition
+# from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import normalize
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import GridSearchCV
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
-from sklearn.model_selection import train_test_split, KFold, cross_val_score
+# from sklearn.preprocessing import normalize
+# from sklearn.tree import DecisionTreeClassifier
+# from sklearn.model_selection import GridSearchCV
+# from sklearn.neighbors import KNeighborsClassifier
+# from sklearn.linear_model import LogisticRegression
+# from sklearn.metrics import classification_report, confusion_matrix
+# from sklearn.model_selection import train_test_split, KFold, cross_val_score
 
 #Data importation
 data = pd.read_csv('data/breast-cancer.csv')
