@@ -21,8 +21,8 @@ from sklearn.metrics import accuracy_score
 # from sklearn.model_selection import train_test_split, KFold, cross_val_score
 
 #Data importation
-data = pd.read_csv('data/breast-cancer.csv')
-test_data = pd.read_csv('data/y_test.csv')
+data = pd.read_csv('./data/breast-cancer.csv')
+test_data = pd.read_csv('./data/y_test.csv')
 
 favicon = Image.open('templates/images/bc_fav.png')
 st.set_page_config(page_title="BC-classifier", page_icon= favicon)
