@@ -14,14 +14,14 @@ from streamlit_option_menu import option_menu
 from sklearn.metrics import accuracy_score
 # from sklearn.preprocessing import normalize
 # from sklearn.tree import DecisionTreeClassifier
-# from sklearn.model_selection import GridSearchCV
+# from sklearn.model_selection import GridSearchCV | \C:\Users\isichei\Documents\Git\bc-predictor\streamlit_app\breast-cancer.csv
 # from sklearn.neighbors import KNeighborsClassifier
 # from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 # from sklearn.model_selection import train_test_split, KFold, cross_val_score
 
-#Data importation
-data = pd.read_csv(r"\C:\Users\isichei\Documents\Git\bc-predictor\streamlit_app\breast-cancer.csv")
+#Data importation 
+data = pd.read_csv("https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/breast-cancer.csv")
 test_data = pd.read_csv('y_test.csv')
 
 favicon = Image.open('bc_fav.png')
