@@ -14,13 +14,13 @@ from streamlit_option_menu import option_menu
 from sklearn.metrics import accuracy_score
 # from sklearn.preprocessing import normalize
 # from sklearn.tree import DecisionTreeClassifier
-# from sklearn.model_selection import GridSearchCV | \C:\Users\isichei\Documents\Git\bc-predictor\streamlit_app\breast-cancer.csv
+# from sklearn.model_selection import GridSearchCV 
 # from sklearn.neighbors import KNeighborsClassifier
 # from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 # from sklearn.model_selection import train_test_split, KFold, cross_val_score
 
-#Data importation streamlit_app/breast-cancer.csv | https://github.com/isichei-nnamdi/bc-predictor/blob/main/ | "📈"
+#Data importation 
 data = pd.read_csv("streamlit_app/breast-cancer.csv", on_bad_lines='skip')
 test_data = pd.read_csv('streamlit_app/y_test.csv', on_bad_lines='skip')
 
@@ -64,7 +64,7 @@ def main():
                 <li><p align="justify"><b style= 'color: #ED2E38'>Linearity Checker:</b> Using this function of the app, the user can examine the features that are linearly related. The user selects the desired features from a drop-down menu of all the accessible features, and a scatter matrix is then created for visualization.</p>
             </ul>
             """,unsafe_allow_html=True)
-            st.table(data)
+           
         elif option == 'Cancer Type Plot':
             st.markdown(f"""<p align="justify">The dataset connected with this app was examined, and two distinct diagnoses of breast cancer were recorded as Benign (B) and Malignant (M). See the table and bar plot below for visualization of the frequency of each cancer type.</p>""", unsafe_allow_html=True)
             st.table(data['diagnosis'].value_counts())
