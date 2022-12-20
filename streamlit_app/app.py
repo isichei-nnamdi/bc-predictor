@@ -25,7 +25,7 @@ data = pd.read_csv("https://github.com/isichei-nnamdi/bc-predictor/blob/main/str
 test_data = pd.read_csv('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/y_test.csv', on_bad_lines='skip')
 
 #favicon = Image.open('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/bc_fav.png')
-st.set_page_config(page_title="BC-classifier", page_icon= 📈)
+st.set_page_config(page_title="BC-classifier", page_icon= "📈")
 
 
 def main():
