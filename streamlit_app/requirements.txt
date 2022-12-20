@@ -1,6 +1,7 @@
 streamlit_option_menu
 joblib
 sklearn
+scikit-learn
 matplotlib
 plotly
 click==8
