@@ -17,14 +17,14 @@ from sklearn.metrics import accuracy_score
 # from sklearn.model_selection import GridSearchCV
 # from sklearn.neighbors import KNeighborsClassifier
 # from sklearn.linear_model import LogisticRegression
-# from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix
 # from sklearn.model_selection import train_test_split, KFold, cross_val_score
 
 #Data importation
-data = pd.read_csv('./data/breast-cancer.csv')
-test_data = pd.read_csv('./data/y_test.csv')
+data = pd.read_csv('breast-cancer.csv')
+test_data = pd.read_csv('y_test.csv')
 
-favicon = Image.open('templates/images/bc_fav.png')
+favicon = Image.open('bc_fav.png')
 st.set_page_config(page_title="BC-classifier", page_icon= favicon)
 
 
@@ -115,11 +115,11 @@ def main():
             st.write(dataframe.head(5))
 
             # Loading model to compare the results
-            tree_model = pickle.load(open('templates/models/DecisionTreeClassifier().pkl','rb'))
-            gauss_model = pickle.load(open('templates/models/GaussianNB().pkl','rb'))
-            knn_model = pickle.load(open('templates/models/KNeighborsClassifier(n_neighbors=3).pkl','rb'))
-            lr_model = pickle.load(open('templates/models/lr_model.pkl','rb'))
-            svc_model = pickle.load(open('templates/models/svc_fit.pkl','rb'))
+            tree_model = pickle.load(open('DecisionTreeClassifier().pkl','rb'))
+            gauss_model = pickle.load(open('GaussianNB().pkl','rb'))
+            knn_model = pickle.load(open('KNeighborsClassifier(n_neighbors=3).pkl','rb'))
+            lr_model = pickle.load(open('lr_model.pkl','rb'))
+            svc_model = pickle.load(open('svc_fit.pkl','rb'))
             
             options = st.selectbox(
                     'Select a trained model from the list to classify the type of breast cancer.',
