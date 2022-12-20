@@ -3,7 +3,7 @@ import pickle
 #import joblib
 import pandas as pd
 from PIL import Image
-import seaborn as sns
+#import seaborn as sns
 import plotly.express as px
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
