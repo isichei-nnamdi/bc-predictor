@@ -114,10 +114,10 @@ def main():
             st.markdown(f"The uploaded file has {len(list(dataframe))} columns which are: {list(dataframe.columns)}.")
             st.write(dataframe.head(5))
 
-            # Loading model to compare the results
+            # Loading model to compare the results 
             tree_model = pickle.load(open('streamlit_app/DecisionTreeClassifier().pkl','rb'))
             gauss_model = pickle.load(open('streamlit_app/GaussianNB().pkl','rb'))
-            knn_model = pickle.load(open('streamlit_app/KNeighborsClassifier(n_neighbors%3D3).pkl','rb'))
+            knn_model = pickle.load(open('streamlit_app/KNeighborsClassifier(n_neighbors=3).pkl','rb'))
             lr_model = pickle.load(open('streamlit_app/lr_model.pkl','rb'))
             svc_model = pickle.load(open('streamlit_app/svc_fit.pkl','rb'))
             
