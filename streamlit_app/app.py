@@ -20,8 +20,8 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report, confusion_matrix
 # from sklearn.model_selection import train_test_split, KFold, cross_val_score
 
-#Data importation 
-data = pd.read_csv("https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/breast-cancer.csv", on_bad_lines='skip')
+#Data importation streamlit_app/breast-cancer.csv | https://github.com/isichei-nnamdi/bc-predictor/blob/main/
+data = pd.read_csv("streamlit_app/breast-cancer.csv", on_bad_lines='skip')
 test_data = pd.read_csv('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/y_test.csv', on_bad_lines='skip')
 
 #favicon = Image.open('https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/bc_fav.png')
