@@ -64,7 +64,7 @@ def main():
                 <li><p align="justify"><b style= 'color: #ED2E38'>Linearity Checker:</b> Using this function of the app, the user can examine the features that are linearly related. The user selects the desired features from a drop-down menu of all the accessible features, and a scatter matrix is then created for visualization.</p>
             </ul>
             """,unsafe_allow_html=True)
-
+            st.table(data)
         elif option == 'Cancer Type Plot':
             st.markdown(f"""<p align="justify">The dataset connected with this app was examined, and two distinct diagnoses of breast cancer were recorded as Benign (B) and Malignant (M). See the table and bar plot below for visualization of the frequency of each cancer type.</p>""", unsafe_allow_html=True)
             st.table(data['diagnosis'].value_counts())
