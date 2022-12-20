@@ -21,7 +21,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 # from sklearn.model_selection import train_test_split, KFold, cross_val_score
 
 #Data importation 
-data = pd.read_csv("https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/breast-cancer.csv")
+data = pd.read_csv("https://github.com/isichei-nnamdi/bc-predictor/blob/main/streamlit_app/breast-cancer.csv", on_bad_lines='skip')
 test_data = pd.read_csv('y_test.csv')
 
 favicon = Image.open('bc_fav.png')
