@@ -1,0 +1,9 @@
+streamlit_option_menu
+joblib
+sklearn
+matplotlib
+seaborn
+ploty-geo==1.0.0
+geopandas==0.3.0
+pyshp==1.2.10
+shapely==1.6.3
